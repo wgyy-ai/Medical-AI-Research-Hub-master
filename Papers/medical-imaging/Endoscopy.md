@@ -1,1 +1,3 @@
-
+| Year | Title | 中文标题 | Venue | Paper | Code | Task | Chinese Notes | Reproduction |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-05 | A Dual-Generalization Low-Light Enhancement Framework for Capsule Endoscopy Image Restoration and Segmentation | 用于胶囊内镜图像恢复与分割的双重泛化低照度增强框架 | TMI | [paper](https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=A%20Dual-Generalization%20Low-Light%20Enhancement%20Framework%20for%20Capsule%20Endoscopy%20Image%20Restoration%20and%20Segmentation) | [code](https://github.com/superwsc/Dual-Gen-Frame) | reconstruction; segmentation | x | x |
