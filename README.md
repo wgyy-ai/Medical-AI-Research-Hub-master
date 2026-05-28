@@ -1,61 +1,174 @@
 # Medical-AI-Research-Hub
 
-一个专注于 **医学 AI（Medical AI）研究方向** 的导航仓库，持续整理和追踪高质量研究资源。
+一个专注于 **Medical AI** 的研究导航仓库，面向医学 AI 研究者、学生和开发者，持续整理高质量论文、数据集、工具与学习资源。
 
-项目希望通过 **轻量化、长期维护、结构清晰** 的方式，为医学 AI 研究者、学生与开发者提供高效入口。
 
 ---
 
-# 🎯 项目内容
+## Project Scope
 
-本仓库将系统整理以下方向：
+本仓库主要覆盖以下内容：
 
-- 📄 医学 AI 论文（Papers）
-- 🗂 医学数据集
-- 🛠 工具、教程与课程
-- 🚀 优质开源项目
-
----
-
-# 🧭 Core Navigation
-
-## 📄 Papers
-
-### Medical Imaging
-
-医学影像方向，包括：
-
-- CT / MRI / Ultrasound 等
-- 分割、检测、诊断
-- 多模态医学影像
-
-
-### Medical LLM
-
-医学大模型方向，包括：
-
-- 基础模型
-- Clinical LLM
-- 医学 Agent
-- RAG & 医疗知识增强
-- 多模态医疗大模型
-- 医疗AI科研
-
-### Survey
-
-高质量综述论文与方向总结：
-
-- 医疗多模态综述
-- 医学影像综述
-- 医疗 LLM 综述
+- `Papers`：医学 AI 论文导航与期刊追踪
+- `Datasets`：医学影像、临床文本与多模态数据集
+- `Tools`：常用工具、开源框架与实用教程
+- `Courses`：课程、讲义与学习路线
 
 ---
 
-## 🗂 Resources
+## Papers
+
+### Retrieval by Venue
+
+
+推荐的入口方式例如：
+
+- `TMI`
+- `MedIA`
+- `NPJ Digital Medicine`
+- `MICCAI`
+- `CVPR`
+- `ICCV`
+- `ECCV`
+- `NeurIPS`
+- `ICLR`
+
+每个期刊或会议下，可以继续按：
+
+- 年份
+- 月份 / Issue
+- 专题方向
+
+
+---
+
+### Table Format
+
+
+
+```md
+| Year | Title | Zh Title | Venue | Paper | Code | Modality | Task | Paradigm | Chinese Notes | Reproduction |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+```
+
+字段说明：
+
+- `Year`：发表年份
+- `Title`：英文标题
+- `Zh Title`：中文标题或中文意译
+- `Venue`：期刊 / 会议名称
+- `Paper`：论文链接
+- `Code`：GitHub 或项目代码链接
+- `Modality`：医学模态或场景
+- `Task`：核心任务
+- `Paradigm`：方法范式
+- `Chinese Notes`：中文解读、笔记或延伸链接
+- `Reproduction`：复现状态、实验记录或结果链接
+
+---
+
+###  Taxonomy
+
+为保证长期维护时结构清晰，论文属性统一使用以下三维框架：
+
+#### Modality
+
+- `CT`
+- `MRI`
+- `Ultrasound`
+- `XRay`
+- `Pathology`
+- `PET`
+- `Endoscopy`
+- `Ophthalmology`
+- `Dental`
+- `Surgical`
+- `Multi-modal`
+- `General`
+
+#### Task
+
+- `Segmentation`
+- `Detection`
+- `Reconstruction`
+- `Classification`
+- `Diagnosis`
+- `Prognosis`
+- `Registration`
+- `Tracking`
+- `Generation`
+- `Image Translation`
+- `Denoising`
+- `Representation Learning`
+- `Dataset / Benchmark`
+- `Report Generation`
+- `VQA`
+- `Multi-modal Fusion`
+
+#### Paradigm
+
+- `Conventional`
+- `Foundation Model`
+- `Vision-Language Model`
+- `Large Language Model`
+- `Agent`
+
+---
+
+## Reader Guide
+
+这个仓库更适合用来“找方向”和“搭路线”，不只是简单收藏论文。
+
+### 1. 如果你按期刊追踪最新论文
+
+建议优先从 `Venue` 入口进入：
+
+- 想看高质量医学影像论文：优先看 `TMI`、`MedIA`
+- 想看跨学科或方法创新：优先看 `CVPR`、`MICCAI`、`NeurIPS`
+
+
+### 2. 如果你按研究问题检索
+
+建议先定位三列：
+
+- `Modality`
+- `Task`
+- `Paradigm`
+
+
+### 3. 如果你是初学者
+
+推荐按下面顺序使用：
+
+1. 先看目标方向的代表 `Venue`
+2. 再按 `Task` 找核心问题
+3. 再按 `Paradigm` 看方法演进
+4. 最后进入 `Chinese Notes` 和 `Reproduction` 看深度内容
+
+### 4. 如果你想快速判断一篇论文值不值得读
+
+建议重点看这几列：
+
+- `Venue`
+- `Task`
+- `Paradigm`
+- `Code`
+- `Chinese Notes`
+
+常见判断方式：
+
+- 有公开代码：更适合复现和快速上手
+- 有中文解读：更适合快速建立理解
+- 属于新范式：更适合追踪趋势
+- 属于高频任务：更适合作为系统调研入口
+
+---
+
+## Resources
 
 ### Datasets
 
-医学 AI 常用数据集与 Benchmark：
+重点整理以下资源：
 
 - 医学影像数据集
 - 临床文本数据集
@@ -64,61 +177,23 @@
 
 ### Tools
 
-医学 AI 研究常用工具：
+重点整理以下工具：
 
 - Annotation Tools
 - Training / Inference Toolkit
+- Evaluation Utilities
+- Paper Reading / Reproduction Utilities
 
 ### Courses
 
-推荐课程与学习资料：
+重点整理以下学习资源：
 
 - Medical AI
-- Deep Learning for Healthcare
 - Medical Imaging
+- Deep Learning for Healthcare
 - LLM & Multimodal Learning
 
 ---
-
-# 🚀 使用说明
-
-## 1. 快速查找方向
-
-根据研究方向进入对应目录：
-
-| 方向 | 说明 |
-| --- | --- |
-| medical-imaging | 医学影像 |
-| medical-llm | 医学大模型 |
-| survey | 综述论文 |
-| datasets | 数据集 |
-| tools | 工具 |
-| courses | 课程 |
-
----
-
-## 2. 如何使用本仓库
-
-推荐以下使用方式：
-
-### 🔍 论文调研
-
-- 快速查看领域代表性工作
-- 跟踪最新研究方向
-- 构建文献阅读路线
-
-
-### 📚 学习路线
-
-适合：
-
-- 医学 AI 初学者
-- 医疗影像研究者
-- 医学大模型研究者
-- AI4Healthcare 开发者
-
----
-
 # 🌟 知识星球 & 深度内容
 
 为了保证仓库简洁，本仓库主要维护：
@@ -177,3 +252,4 @@
 
 
 如果这个仓库对你有帮助，欢迎 ⭐ Star 支持。
+
